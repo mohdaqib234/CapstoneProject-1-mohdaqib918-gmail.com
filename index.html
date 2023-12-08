@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Bootstrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        h2.card-title{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            text-align: center;
+            text-shadow: 3px 3px black;
+        }
+        .card-img-overlay{
+            backdrop-filter: blur(5px);
+        }
+        .card-text{
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            
+        }
+        .cover-image{
+            opacity: 0.3;
+        }
+        @media (min-width:768px) {
+            h2.card-title{
+                font-size: 80px;
+            }
+        }
+        @media (max-width:992px) {
+            .hide-md{
+                display: none;
+            }
+        }
+        @media (max-width:576px) {
+            .hide-xs{
+                display: none;
+            }
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div id="header"></div>
+
+    <!--Cover Image-->
+    <div class="card text-bg-dark">
+        <img src="../E-commerce App/images/cover-image.jpg" height="500px" class="card-img cover-image" alt="...">
+        <div class="card-img-overlay mt-5 pt-5">
+          <h2 class="card-title text-light mt-5 pt-5">E-ShopHub</h2>
+          <h6 class="card-text" style="text-shadow: 1px 1px red;">Everything you need - on a budget.</p>
+        </div>
+      </div>
+
+    <!--Featured Products-->
+    <h2 style="text-align: center;color: aliceblue;text-decoration: underline #dc4545;" class="mt-4">Featured Products</h2>
+    <div id="carouselExample" class="carousel slide" >
+
+        <!--First Slider-->
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/kurtaw.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Women Kurta with Dupatta</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>490</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">Who doesn’t love a gorgeous magenta colour? It’s trendy and modern.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/kurti.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Floral Print Kurti</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>799</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">An amazing range of womens western wear in soft and solid colors.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-md hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/kurta.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Kurta with Palazzo and Dupatta</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>1,490</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">The detailed print, along with the black color, makes it a timeless piece.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-md hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/Wpants.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Women Pant</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>399</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">These pants are designed to match all your wardrobe essentials.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Second Slider-->
+          <div class="carousel-item">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/sweatshirt.webp" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Round Neck SweatShirt</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>249</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">This fabric is soft in touch and it makes feel so comfort when you wear.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/t-shirt.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Polo T-shirt</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>399</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;"> All our cotton fabrics are pre-shrunk which ensures long life.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-md hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/shirt.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Printed Casual Shirt</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>499</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">The detailed print, along with the black color, makes it a timeless piece.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-md hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/pant.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Slim-Fit Men's Pant</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>999</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">These pants are designed to match all your wardrobe essentials.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Third Slider-->
+          <div class="carousel-item">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/Ksweat.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Kids Hooded Sweatshirt</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>215</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">Hooded sweatshirts have been an all-time favourite for many kids out there.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/Gjacket.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Girls Jacket</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>799</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">An amazing range of kids jacket wear in soft and solid colors.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-md hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/ksuit.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Girls Sahara Suit</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>999</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">Best suitable for all occasion like wedding, ceremonial, party, festival.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 hide-md hide-xs">
+                    <div class="card ms-4 mt-4 me-4">
+                        <img src="../E-commerce App/images/bshirt.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title" style="font-weight: bold;">Boys Full Sleeve Shirt</p>
+                            <p class="card-text text-dark"><i class="fa fa-inr"></i>699</p>
+                          <p class="card-text text-secondary" style="font-weight: 400;">Designed for a kid’s comfort, these are carefully made from 100% soft cotton.</p>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+
+    <!--Footer-->
+    <div id="footer"></div>
+    
+    <!--Bootstrap JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Function to load and inject the header
+        function includeHeader() {
+            fetch('header.html') // Path to your header HTML file
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data)
+                    document.getElementById('header').innerHTML = data;
+                })
+        }
+
+        // Function to load and inject the footer
+        function includeFooter() {
+            fetch('footer.html') // Path to your header HTML file
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data)
+                    document.getElementById('footer').innerHTML = data;
+                })
+        }
+
+        // Call the functions to include the header and footer
+        includeHeader();
+        includeFooter();
+
+    </script>
+</body>
+</html>
